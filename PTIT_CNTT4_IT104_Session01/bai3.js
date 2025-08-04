@@ -6,5 +6,4 @@ students.forEach(students => {
     console.log(`Xin cho ${students.name}! Ma so: ${students.id}`);
     
 }
-
 )
