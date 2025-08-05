@@ -1,28 +1,47 @@
-function getStudentSummary(student) {
-    const { name, subjects } = student;
-    const total = subjects.reduce((sum, subj) => sum + subj.score, 0);
-    const avg = +(total / subjects.length).toFixed(2);
-    let grade;
-    if (avg >= 8.5) grade = "Học sinh giỏi";
-    else if (avg >= 7) grade = "Học sinh khá";
-    else if (avg >= 5) grade = "Học sinh trung bình";
-    else grade = "Học sinh yếu";
+const getOrderSummary = (products = []) => {
+  const details = products.map(p => {
+    const {
+      name,
+      price,
+      quantity,
+      discount = 0,
+      minQuantity = Infinity,  
+      extraDiscount = 0
+    } = p;
 
-    const best = subjects.reduce((a, b) => (a.score > b.score ? a : b));
-    const worst = subjects.reduce((a, b) => (a.score < b.score ? a : b));
-    return `${name} có điểm trung bình là ${avg}, được xếp loại: ${grade}.
-    Môn học tốt nhất: ${best.name} (${best.score})
-    Môn học kém nhất: ${worst.name} (${worst.score})`;
-}
+    const eligibleExtra = quantity >= minQuantity ? extraDiscount : 0;
 
-const student = {
-    name: "Nguyễn Văn An",
-    subjects: [
-        { name: "Toán", score: 9 },
-        { name: "Văn", score: 7.5 },
-        { name: "Anh", score: 8.2 },
-        { name: "Lý", score: 6.8 }
-    ]
+    const finalPrice = Math.round(
+      price * (1 - discount) * (1 - eligibleExtra)
+    );
+
+    const beforeItem = price * quantity;
+
+    const subtotal = finalPrice * quantity;
+
+    return { name, finalPrice, quantity, subtotal, beforeItem };
+  });
+
+  const totalBeforeDiscount = details
+    .reduce((sum, { beforeItem }) => sum + beforeItem, 0);
+
+  const totalAfterDiscount = details
+    .reduce((sum, { subtotal }) => sum + subtotal, 0);
+
+  const cleanDetails = details.map(({ beforeItem, ...rest }) => rest);
+
+  return {
+    summary: `Tổng trước giảm: ${totalBeforeDiscount.toLocaleString()} • Tổng sau giảm: ${totalAfterDiscount.toLocaleString()}`,
+    totalBeforeDiscount,
+    totalAfterDiscount,
+    details: cleanDetails
+  };
 };
 
-console.log(getStudentSummary(student));
+const products = [
+  { name: "Áo thun", price: 150000, quantity: 3, discount: 0.1, minQuantity: 3, extraDiscount: 0.05 },
+  { name: "Quần jean", price: 450000, quantity: 1, discount: 0.15 },
+  { name: "Mũ lưỡi trai", price: 120000, quantity: 5, discount: 0, minQuantity: 4, extraDiscount: 0.1 }
+];
+
+console.log(getOrderSummary(products));
