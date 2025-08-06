@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2016",
+    "types": [],
+    "lib": ["ES2016", "dom"],
+    "strict": true
+  }
+}

@@ -45,3 +45,5 @@ const products = [
 ];
 
 console.log(getOrderSummary(products));
+
+
