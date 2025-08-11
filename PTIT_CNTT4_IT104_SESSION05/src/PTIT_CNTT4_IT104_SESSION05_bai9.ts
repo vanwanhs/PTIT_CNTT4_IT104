@@ -63,7 +63,7 @@ class LibraryBai9 {
         this.books = this.books.filter(book => book.getIdBai9() !== id);
         if (this.books.length < initialLength) {
             console.log(`Đã xóa sách có ID ${id}`);
-        } else {
+        } else { 
             console.log(`Không tìm thấy sách có ID ${id}`);
         }
     }
