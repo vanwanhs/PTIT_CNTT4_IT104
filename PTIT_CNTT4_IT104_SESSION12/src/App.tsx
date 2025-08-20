@@ -1,4 +1,5 @@
 import React from 'react'
+import TodoListIndex from './Components/PTIT_CNTT4_IT104_SESSION12_EXERCISE9/TodoListIndex'
 // import AdminIndex from './Components/PTIT_CNTT4_IT104_SESSION12_EXERCISE6/AdminIndex'
 // import UserLayout from './Components/PTIT_CNTT4_IT104_SESSION12_EXERCISE7/UserLayout'
 // import UserTable from './Components/PTIT_CNTT4_IT104_SESSION12_EXERCISE8/UserTable'
@@ -19,6 +20,7 @@ export default function App() {
     {/* <AdminIndex></AdminIndex> */}
     {/* <UserLayout></UserLayout> */}
     {/* <UserTable></UserTable> */}
+    <TodoListIndex></TodoListIndex>
    </>
   )
 }
