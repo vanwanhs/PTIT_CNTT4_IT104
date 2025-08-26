@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import TodoApp from './Components/PTIT_CNTT4_IT104_SESSION15_EXERCISE09/TodoApp'
+// import TodoApp from './Components/PTIT_CNTT4_IT104_SESSION15_EXERCISE09/TodoApp'
 // import Counter from './Components/PTIT_CNTT4_IT104_SESSION15_EXERCISE08/Counter'
 // import Clock from './Components/PTIT_CNTT4_IT104_SESSION15_EXERCISE07/Clock'
 // import ListPost from './Components/PTIT_CNTT4_IT104_SESSION15_EXERCISE06/ListPost'
@@ -19,8 +19,10 @@ export default class App extends Component {
         {/* <ListPost></ListPost> */}
         {/* <Clock></Clock> */}
         {/* <Counter></Counter> */}
-        <TodoApp></TodoApp>
+        {/* <TodoApp></TodoApp> */}
       </div>
     )
   }
 }
+
+
