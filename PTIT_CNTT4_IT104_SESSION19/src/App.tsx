@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import RenderCounter from './components/PTIT_CNTT4_IT104_Session19_ Exercises03/RenderCounter '
+import LoginForm from './components/PTIT_CNTT4_IT104_Session19_ Exercises08/LoginForm'
+import ScrollToSection from './components/PTIT_CNTT4_IT104_Session19_ Exercises07/ScrollToSection'
+import KeyTracker from './components/PTIT_CNTT4_IT104_Session19_ Exercises06/KeyTracker'
+import Ex2 from './components/PTIT_CNTT4_IT104_Session19_ Exercises02/Ex2'
+// import LanguageApp from './components/PTIT_CNTT4_IT104_Session19_ Exercises09/LanguageApp'
+// import ItemList from './components/PTIT_CNTT4_IT104_Session19_ Exercises010/ItemList'
+// import FormLogin from './components/PTIT_CNTT4_IT104_Session19_ Exercises04/FormLogin'
+// import RandomQuote from './components/PTIT_CNTT4_IT104_Session19_ Exercises05/RandomQuote'
+// import ShoppingCart from './components/PTIT_CNTT4_IT104_Session19_ Exercises01/ShoppingCart'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      {/* <ShoppingCart></ShoppingCart> */}
+      {/* <FormLogin></FormLogin> */}
+      {/* <RandomQuote></RandomQuote> */}
+      {/* <LanguageApp></LanguageApp> */}
+      {/* <ItemList></ItemList> */}
+      <RenderCounter></RenderCounter>
+      <LoginForm></LoginForm>
+      <ScrollToSection></ScrollToSection>
+      <KeyTracker></KeyTracker>
+      <Ex2></Ex2>
+    </div>
   )
 }
-
-export default App
