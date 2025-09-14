@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function processArray(numbers, callback) {
+    if (!Array.isArray(numbers) || typeof callback !== "function") {
+        console.error("Tham số truyền vào không hợp lệ.");
+        return;
+    }
+
+  numbers.forEach((num, index) => {
+    setTimeout(() => {
+      callback(num);
+    }, index * 1000);
+  });
+}
+function printNumber(n) {
+  console.log("Số đang xử lý:", n);
+}
+
+const myArray = [10, 20, 30, 40, 50];
+
+processArray(myArray, printNumber);
+
+    </script>
+</body>
+</html>

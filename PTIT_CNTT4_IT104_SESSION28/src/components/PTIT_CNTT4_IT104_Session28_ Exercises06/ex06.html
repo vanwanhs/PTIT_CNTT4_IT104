@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function task(callback){
+            setTimeout(()=>{
+                console.log("Nhiệm vụ task 1 hoàn thành");
+                callback()
+            },1000)
+        }
+         function task2(callback){
+            setTimeout(()=>{
+                console.log("Nhiệm vụ task 2 hoàn thành");
+                callback()
+            },1500)
+        }
+         function task3(callback){
+            setTimeout(()=>{
+                console.log("Nhiệm vụ task 3 hoàn thành");
+                callback()
+            },2000)
+        }
+        function runAllTask() {
+            task(()=>{
+                task2(()=>{
+                    task3(()=>{
+                        console.log("Tất cả các task đã hoàn thành");
+ 
+                    });
+                })
+            })
+        }
+        runAllTask();
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkCondition(condition, callback) {
+  if (typeof condition !== "boolean") {
+    console.error("Điều kiện phải là kiểu boolean (true/false)");
+    return;
+  }
+
+  if (typeof callback !== "function") {
+    console.error("Callback phải là một hàm.");
+    return;
+  }
+
+  setTimeout(() => {
+    callback(condition);
+  }, 1000);
+}
+function handleResult(result) {
+  if (result) {
+    console.log("Điều kiện đúng! Thực hiện hành động thành công.");
+  } else {
+    console.log(" Điều kiện sai! Không thể thực hiện hành động.");
+  }
+}
+checkCondition(true, handleResult);  
+checkCondition(false, handleResult);
+
+    </script>
+</body>
+</html>
