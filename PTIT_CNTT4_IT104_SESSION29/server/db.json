@@ -1,0 +1,89 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "product_name": "Bánh Trung Thu Khoai Môn",
+      "image": "https://via.placeholder.com/150",
+      "price": 45000,
+      "quantity": 10,
+      "created_at": "2025-09-01"
+    },
+    {
+      "id": 2,
+      "product_name": "Bánh Trung Thu Trứng Muối",
+      "image": "https://via.placeholder.com/150",
+      "price": 55000,
+      "quantity": 8,
+      "created_at": "2025-09-02"
+    },
+    {
+      "id": 3,
+      "product_name": "Bánh Trung Thu Đậu Xanh",
+      "image": "https://via.placeholder.com/150",
+      "price": 40000,
+      "quantity": 12,
+      "created_at": "2025-09-03"
+    },
+    {
+      "id": 4,
+      "product_name": "Bánh Trung Thu Thập Cẩm",
+      "image": "https://via.placeholder.com/150",
+      "price": 60000,
+      "quantity": 6,
+      "created_at": "2025-09-04"
+    },
+    {
+      "id": 5,
+      "product_name": "Bánh Trung Thu Dừa Non",
+      "image": "https://via.placeholder.com/150",
+      "price": 48000,
+      "quantity": 9,
+      "created_at": "2025-09-05"
+    }
+  ],
+  "student": [
+    {
+      "id": 1,
+      "student_name": "Hành Lá",
+      "email": "hihi@gmail.com",
+      "address": "Hà Nội",
+      "phone": "123456789",
+      "status": true,
+      "created_at": "2025-09-01"
+    },
+    {
+      "id": 2,
+      "student_name": "Dưa Hấu",
+      "email": "haha@gmail.com",
+      "address": "Hà Nội",
+      "phone": "123456789",
+      "status": true,
+      "created_at": "2025-09-01"
+    },
+    {
+      "id": 3,
+      "student_name": "Cam",
+      "email": "kaka@gmail.com",
+      "address": "Hà Nội",
+      "phone": "123456789",
+      "status": true,
+      "created_at": "2025-10-01"
+    },
+    {
+      "student_name": "Dứa",
+      "address": "Nam định",
+      "phone": "12345678",
+      "status": true,
+      "created_at": "2025-09-15",
+      "id": 4
+    },
+    {
+      "student_name": "Xoài",
+      "address": "Hà Nội",
+      "phone": "3333333",
+      "status": true,
+      "created_at": "2025-09-15",
+      "id": 5
+    }
+  ]
+}
