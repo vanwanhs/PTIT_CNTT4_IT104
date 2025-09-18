@@ -1,5 +1,3 @@
-// component/PTIT_CNTT4_IT104_Session32_Exercises01/store/userReducer.ts
-
 const initialState = {
   id: "123",
   userName: "Nguyen Van A",

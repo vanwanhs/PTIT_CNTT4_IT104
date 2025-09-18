@@ -5,8 +5,8 @@ import React, { useEffect } from 'react'
 // import RandomNumber from './component/PTIT_CNTT4_IT104_Session32_ Exercises04/RandomNumber'
 // import ChangeState from './component/PTIT_CNTT4_IT104_Session32_ Exercises05/ChangeState'
 // import ThemeToggle from './component/PTIT_CNTT4_IT104_Session32_ Exercises06/ThemeToggle'
-import Register from './component/PTIT_CNTT4_IT104_Session32_ Exercises07/Register'
-import Login from './component/PTIT_CNTT4_IT104_Session32_ Exercises07/Login'
+import Register from './component/PTIT_CNTT4_IT104_Session32_ Exercises0708/Register'
+import Login from './component/PTIT_CNTT4_IT104_Session32_ Exercises0708/Login'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { RouterProvider } from 'react-router'
 import type { RootState } from './store/store';
