@@ -1,5 +1,3 @@
-// src/component/ChangeStateApp/store/companyReducer.ts
-
 export interface CompanyState {
   company: string;
 }

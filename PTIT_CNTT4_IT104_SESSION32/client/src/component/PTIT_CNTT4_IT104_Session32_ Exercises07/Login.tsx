@@ -33,7 +33,7 @@ export default function Login() {
     dispatch({ type: "LOGIN_SUCCESS" });
     setError("");
     alert("Đăng nhập thành công!");
-    navigate("/dashboard"); // 👉 đổi thành trang bạn muốn
+    navigate("/dashboard");
   };
 
   return (

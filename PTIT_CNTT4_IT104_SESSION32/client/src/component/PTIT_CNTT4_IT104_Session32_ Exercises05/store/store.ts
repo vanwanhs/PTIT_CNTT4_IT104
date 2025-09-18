@@ -1,5 +1,3 @@
-
-
 import { createStore, combineReducers } from "redux";
 import companyReducer from "./companyReducer";
 
