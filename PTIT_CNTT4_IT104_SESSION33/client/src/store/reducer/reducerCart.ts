@@ -15,7 +15,7 @@ export interface Action {
   payload: any;
 }
 
-// Khởi tạo từ localStorage nếu có
+
 const savedCart = localStorage.getItem('cart');
 const parsedCart = savedCart ? JSON.parse(savedCart) : [];
 
@@ -38,7 +38,6 @@ export const initialState: CartState = {
   ],
 };
 
-// Reducer
 export const reducerCart = (
   state: CartState = initialState,
   action: Action
