@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --w --port 8080 db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.9.0",
+    "json-server": "^0.17.4",
+    "react-redux": "^9.2.0"
+  },
+  "description": ""
+}
