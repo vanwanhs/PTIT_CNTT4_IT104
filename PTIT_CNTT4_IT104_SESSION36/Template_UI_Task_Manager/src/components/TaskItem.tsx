@@ -1,16 +1,6 @@
 import { Checkbox, Chip, IconButton } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
-
 import React from 'react';
-
-interface TaskItemProps {
-  id: string;
-  title: string;
-  completed: boolean;
-  priority: 'low' | 'medium' | 'high';
-  onToggle: (id: string) => void;
-  onDelete: (id: string) => void;
-}
 
 const priorityColor = {
   low: 'success',
@@ -18,13 +8,14 @@ const priorityColor = {
   high: 'error',
 } as const;
 
-const TaskItem: React.FC<TaskItemProps> = ({
+const TaskItem: React.FC<any> = ({
   id,
   title,
   completed,
   priority,
   onToggle,
   onDelete,
+  onEdit, // nhận prop onEdit từ App
 }) => {
   return (
     <div className="flex items-center justify-between bg-white p-3 rounded-xl shadow-sm mb-2">
@@ -40,11 +31,11 @@ const TaskItem: React.FC<TaskItemProps> = ({
           className="ml-2"
         />
       </div>
-      <div>
+      <div className="flex gap-1">
         <IconButton onClick={() => onDelete(id)} color="error">
           <Delete />
         </IconButton>
-        <IconButton color="primary">
+        <IconButton color="primary" onClick={() => onEdit && onEdit()}>
           <Edit />
         </IconButton>
       </div>
