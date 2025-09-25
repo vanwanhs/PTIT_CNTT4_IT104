@@ -1,0 +1,1 @@
+export const API_GETALL_STUDENT = "http://localhost:8080/students"
