@@ -1,0 +1,22 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Văn Ánh ",
+      "age": 19,
+      "lop": "12"
+    },
+    {
+      "id": "ce2b",
+      "name": "aishiteru",
+      "age": 19,
+      "grade": "12A"
+    },
+    {
+      "id": "3966",
+      "name": "kokoro kara aishiteru",
+      "age": 16,
+      "grade": "12A5"
+    }
+  ]
+}
